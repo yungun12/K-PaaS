@@ -3,35 +3,43 @@
 
 <head>
 
+    <!-- 페이지의 문자 인코딩을 UTF-8로 설정 -->
     <meta charset="utf-8">
+    <!-- Internet Explorer에서의 호환성을 위한 설정 -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 화면의 크기에 맞게 페이지를 적절하게 스케일링 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- 페이지 설명 -->
     <meta name="description" content="">
+    <!-- 페이지 작성자 정보 -->
     <meta name="author" content="">
 
+    <!-- 페이지 타이틀 -->
     <title>SB Admin 2 - Login</title>
 
-    <!-- Custom fonts for this template-->
+    <!-- 외부 폰트와 아이콘 사용을 위한 스타일 -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link
-            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-            rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-    <!-- Custom styles for this template-->
+    <!-- SB Admin 2 템플릿을 위한 커스텀 스타일 -->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- 인라인 스타일 정의 -->
     <style>
+        /* 배경색 및 마진 설정 */
         body {
             background-color: #68f6c4 !important;
             margin-top: 50px;
         }
 
+        /* 카드의 반투명 배경과 위치 조정 */
         .card {
             background-color: rgba(255, 255, 255, 0.8) !important; /* 반투명 효과 */
             position: relative;
             z-index: 1; /* 카드가 로고 뒤에 오도록 설정 */
         }
 
+        /* 로고 위치 및 스타일 설정 */
         .logo-container {
             position: absolute;
             left: 50%;
@@ -46,6 +54,7 @@
             justify-content: center;
         }
 
+        /* 로고 이미지 스타일 */
         .logo-container img {
             width: 100%;
             height: 100%;
@@ -53,8 +62,9 @@
             object-fit: cover;
         }
 
+        /* 카드 내용이 로고와 겹치지 않도록 패딩 추가 */
         .card-body {
-            padding-top: 60px; /* 카드 내용이 로고와 겹치지 않도록 패딩 추가 */
+            padding-top: 60px;
         }
     </style>
 
@@ -64,62 +74,72 @@
 
 <div class="container">
 
-    <!-- 로고를 카드 외부에 위치 -->
+    <!-- 로고를 카드 외부에 배치 -->
     <div class="logo-container">
         <img src="img/logo1.png" alt="Logo"> <!-- 로고 이미지 경로 설정 -->
     </div>
 
-    <!-- Outer Row -->
+    <!-- 메인 카드 구성 -->
     <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-12 col-md-10">
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
+                    <!-- 카드 안쪽 구조 시작 -->
                     <div class="row">
                         <div class="col-lg-12 d-flex justify-content-center align-items-center">
                             <div class="w-100 d-flex flex-column justify-content-center" style="max-width: 80%; padding: 5rem;">
+                                <!-- 로그인 제목 -->
                                 <div class="text-center">
                                     <h1 class="h4 text-gray-900 mb-4">로그인</h1>
                                 </div>
+                                <!-- 로그인 폼 -->
                                 <form class="user">
+                                    <!-- 아이디 입력 -->
                                     <div class="form-group">
                                         <input type="text" class="form-control form-control-user" id="exampleInputID" aria-describedby="IDHelp" placeholder="아이디">
                                     </div>
+                                    <!-- 비밀번호 입력 -->
                                     <div class="form-group">
                                         <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="비밀번호">
                                     </div>
+                                    <!-- 아이디 저장 체크박스 -->
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small">
                                             <input type="checkbox" class="custom-control-input" id="customCheck">
                                             <label class="custom-control-label" for="customCheck">아이디 저장</label>
                                         </div>
                                     </div>
+                                    <!-- 로그인 버튼 -->
                                     <a href="index.html" class="btn btn-primary btn-user btn-block">로그인</a>
                                 </form>
                                 <hr>
+                                <!-- 비밀번호 찾기 링크 -->
                                 <div class="text-center">
                                     <a class="small" href="forgot-password.html">비밀번호 찾기</a>
                                 </div>
+                                <!-- 회원가입 링크 -->
                                 <div class="text-center">
                                     <a class="small" href="register.html">회원가입</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- 카드 안쪽 구조 끝 -->
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 
-<!-- Bootstrap core JavaScript-->
+<!-- Bootstrap과 관련된 외부 자바스크립트 파일 불러오기 -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core plugin JavaScript-->
+<!-- jQuery Easing 플러그인 스크립트 -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom scripts for all pages-->
+<!-- SB Admin 2 템플릿 관련 커스텀 스크립트 -->
 <script src="js/sb-admin-2.min.js"></script>
 
 </body>
